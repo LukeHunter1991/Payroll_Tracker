@@ -1,5 +1,7 @@
 # <Payroll Tracker>
 
+https://lukehunter1991.github.io/Payroll_Tracker/
+
 ## Description
 
 I created a simple webpage to track 3 points of data for employees - first name, last name, and salary. The webpage allows the addition of multiple employees and formats the salary as a currency. In the console there two additional functions, the average salary and a random winner picked from the employee array.
