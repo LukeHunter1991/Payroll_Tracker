@@ -28,14 +28,30 @@ const collectEmployees = function() {
     addEmployee = confirm("Add another employee?");
   }
   
-  //Returns an array of objects holding employee details.
+  //Returns an array of objects holding employee details
   return employeeInput;
 }
 
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  // Create sum variable.
+  let sum = 0;
+  // Loop through objects in array.
+  for (people of employeesArray) {
+    // Each loop adds taht employees salary to the sum variable.
+    sum += people.salary;
+  }
+  // Average variable is sum divided by number of inputs.
+  let average = sum / employeesArray.length;
+
+  // Formats average variable as a currency.
+  average = average.toLocaleString("en-US",{
+    style:"currency",
+    currency:"USD"
+  });
+  // Simple message logged tot he console. uses length method of the array to get the number of employees.
+  console.log(`The average salary between our ${employeesArray.length} employee(s) is ${average}`);
 
 }
 
