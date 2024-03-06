@@ -9,10 +9,17 @@ const collectEmployees = function() {
   let addEmployee = true;
 
   while (addEmployee) {
-    // Collect data from user. Salary string pushed to Int so that salaryCell formats correctly.
+    // Collect data from user.
     const firstName = prompt("First Name: ");
     const lastName = prompt("Last Name: ");
-    const salary = parseInt(prompt("Salary: "));
+    let salary = prompt("Salary: ");
+
+    // If salary is not a number default to 0.
+    if (isNaN(salary)) {
+      salary = 0;
+    }
+    
+    salary = parseInt(salary);
 
     // Create object to hold employee details.
     let employee = {

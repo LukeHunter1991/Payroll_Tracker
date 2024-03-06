@@ -13,7 +13,7 @@ No installation required, this webpage runs in your web browser of choice.
 
 ## Usage
 
-Click the 'Add Employees' button and you will be prompted to enter a first name, last name, and salary for an employee. You must ensure that you provide a text response to each prompt and the salary should be input as numbers only. Symbols like $,. should **NOT** be used.
+Click the 'Add Employees' button and you will be prompted to enter a first name, last name, and salary for an employee. You must ensure that you provide a text response to each prompt and the salary should be input as numbers only. Symbols like $,. should **NOT** be used. If salary is not a number it will default to 0.
 
 ![screenshot](./Screenshot%202024-03-06%20225301.png)
 
