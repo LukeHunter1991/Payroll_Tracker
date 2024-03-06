@@ -50,15 +50,17 @@ const displayAverageSalary = function(employeesArray) {
     style:"currency",
     currency:"USD"
   });
+
   // Simple message logged tot he console. uses length method of the array to get the number of employees.
   console.log(`The average salary between our ${employeesArray.length} employee(s) is ${average}`);
-
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
-
+  // Create a random number using the Math.random method. Math.floor ensures that the random number is in the correct range along with the length method.
+  const ranNum = Math.floor(Math.random() * employeesArray.length);
+  // Console log a simple message using the random number as the array index to select a random winner.
+  console.log(`Congratulations to ${employeesArray[ranNum].firstName} ${employeesArray[ranNum].lastName}, our random drawing winner!`);
 }
 
 /*
